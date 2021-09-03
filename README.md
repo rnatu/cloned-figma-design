@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-Nesse projeto, criei um design inspirado pelo dribble para por em prática fundamentos do html e css
+Nesse projeto, criei um design inspirado pelo dribble para por em prática fundamentos do HTML e SASS
 </p>
 
 <p align="center">
@@ -31,12 +31,12 @@ Nesse projeto, criei um design inspirado pelo dribble para por em prática fund
 
 Nesta aplicação o meu principal objetivo foi usar inspirações de design do site Dribble, e colocar em prática utilizando fundamentos da programação web.
 
-Este Desafio visa o aprendizado com HTML e CSS.
+Este Desafio visa o aprendizado com HTML e SASS.
 
 ## 🚀 Tecnologias utilizadas
 
 - HTML
-- CSS
+- [SASS](https://sass-lang.com/)
 
 <h4 align="center">
     Made with 💜 by Renato Xavier
