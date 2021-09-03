@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(251, 185, 222);
+
+  background: linear-gradient(112deg, rgb(218, 208, 208) 0%, rgb(224, 160, 174) 100%);
+
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 80%;
+  height: 70%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  &:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+    filter: blur(10px);
+    margin: -20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+
+    font-weight: 400;
+
+    ul {
+      display: flex;
+      list-style: none;
+      color: white;
+
+      gap: 30px;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+    }
+
+    li.active {
+      background: rgb(99, 187, 99);
+      padding: 3px 10px;
+      border-radius: 15px;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+
+    img {
+      display: absolute;
+      width: 40%;
+      margin-left: -100px;
+      transform: translateY(-60px) rotate(-10deg);
+      animation: move 2s infinite alternate ease-in-out;
+    }
+
+    .social-media {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+
+      height: 100%;
+      width: fit-content;
+
+      color: white;
+
+      svg {
+        margin: 0 30px;
+      }
+    }
+
+    &-text {
+      color: white;
+      width: 100%;
+
+      line-height: 1;
+      padding: 0 30px;
+
+      h1 {
+        font-size: 42px;
+        font-weight: 500;
+      }
+
+      h3 {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      &.right {
+        text-align: right;
+        margin-top: 150px;
+      }
+
+      &.left {
+        margin-top: -150px;
+      }
+    }
+  }
+
+  .pre-order {
+    background-color: rgb(99, 187, 99);
+
+    width: 200px;
+    height: 55px;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-weight: 400;
+
+    border-radius: 8px 0 0 0;
+
+    svg {
+      margin-right: 15px;
+    }
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-20px) rotate(-10deg);
+  }
+}

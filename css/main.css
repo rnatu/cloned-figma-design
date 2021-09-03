@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #fbb9de;
+  background: linear-gradient(112deg, #dad0d0 0%, #e0a0ae 100%);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 80%;
+  height: 70%;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  margin: -20px;
+}
+
+.container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 30px;
+  font-weight: 400;
+}
+
+.container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  color: white;
+  gap: 30px;
+  padding: 15px 30px;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container nav li.active {
+  background: #63bb63;
+  padding: 3px 10px;
+  border-radius: 15px;
+}
+
+.container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.container .content img {
+  display: absolute;
+  width: 40%;
+  margin-left: -100px;
+  -webkit-transform: translateY(-60px) rotate(-10deg);
+          transform: translateY(-60px) rotate(-10deg);
+  -webkit-animation: move 2s infinite alternate ease-in-out;
+          animation: move 2s infinite alternate ease-in-out;
+}
+
+.container .content .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  height: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+}
+
+.container .content .social-media svg {
+  margin: 0 30px;
+}
+
+.container .content-text {
+  color: white;
+  width: 100%;
+  line-height: 1;
+  padding: 0 30px;
+}
+
+.container .content-text h1 {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.container .content-text h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container .content-text.right {
+  text-align: right;
+  margin-top: 150px;
+}
+
+.container .content-text.left {
+  margin-top: -150px;
+}
+
+.container .pre-order {
+  background-color: #63bb63;
+  width: 200px;
+  height: 55px;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-weight: 400;
+  border-radius: 8px 0 0 0;
+}
+
+.container .pre-order svg {
+  margin-right: 15px;
+}
+
+@-webkit-keyframes move {
+  from {
+    -webkit-transform: translateY(-20px) rotate(-10deg);
+            transform: translateY(-20px) rotate(-10deg);
+  }
+}
+
+@keyframes move {
+  from {
+    -webkit-transform: translateY(-20px) rotate(-10deg);
+            transform: translateY(-20px) rotate(-10deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
